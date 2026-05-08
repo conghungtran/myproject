@@ -1,0 +1,77 @@
+[
+  {
+    "file": "src/bar.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/bar.c",
+      "-o",
+      "src/bar.o"
+    ],
+    "directory": "/home/hungtran/Downloads/Cmake",
+    "output": "src/bar.o"
+  },
+  {
+    "file": "src/calculator.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/calculator.c",
+      "-o",
+      "src/calculator.o"
+    ],
+    "directory": "/home/hungtran/Downloads/Cmake",
+    "output": "src/calculator.o"
+  },
+  {
+    "file": "src/demo.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/demo.c",
+      "-o",
+      "src/demo.o"
+    ],
+    "directory": "/home/hungtran/Downloads/Cmake",
+    "output": "src/demo.o"
+  },
+  {
+    "file": "src/foo.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/foo.c",
+      "-o",
+      "src/foo.o"
+    ],
+    "directory": "/home/hungtran/Downloads/Cmake",
+    "output": "src/foo.o"
+  },
+  {
+    "file": "src/main.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/main.c",
+      "-o",
+      "src/main.o"
+    ],
+    "directory": "/home/hungtran/Downloads/Cmake",
+    "output": "src/main.o"
+  }
+]
