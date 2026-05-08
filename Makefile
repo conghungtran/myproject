@@ -1,30 +1,28 @@
 # Compiler and flags
-CC = gcc
-CFLAGS = -Iinclude -Wall -Wextra
-
-# Project name
-TARGET = App
-
-# Automatically find all .c files in src directory
-SOURCES = $(wildcard src/*.c)
-
-# Generate object files from source files
-OBJECTS = $(SOURCES:.c=.o)
+CC       = gcc
+CFLAGS   = -Iinclude -Wall -Wextra
+TARGET   = ./App
+SOURCES  = $(wildcard src/*.c)
+OBJECTS  = $(SOURCES:src/%.c=build/%.o)
 
 # Default target
 all: $(TARGET)
 
-# Link object files into final executable
-$(TARGET): $(OBJECTS)
+# Create build directory and link executable
+$(TARGET): $(OBJECTS) | build
 	$(CC) -o $@ $^
 
-# Compile .c files into .o files
-%.o: %.c
+# Compile C files into object files
+build/%.o: src/%.c | build
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Clean build artifacts
-clean:
-	rm -f $(TARGET) $(OBJECTS)
+# Create build directory
+build:
+	mkdir -p $@
 
-# Phony targets (not actual files)
+# Clean everything
+clean:
+	rm -rf build ./App
+
+# Phony targets
 .PHONY: all clean

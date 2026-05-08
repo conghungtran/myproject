@@ -1,0 +1,107 @@
+[
+  {
+    "file": "src/a1.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/a1.c",
+      "-o",
+      "build/a1.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/a1.o"
+  },
+  {
+    "file": "src/bar.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/bar.c",
+      "-o",
+      "build/bar.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/bar.o"
+  },
+  {
+    "file": "src/calculator.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/calculator.c",
+      "-o",
+      "build/calculator.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/calculator.o"
+  },
+  {
+    "file": "src/demo.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/demo.c",
+      "-o",
+      "build/demo.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/demo.o"
+  },
+  {
+    "file": "src/foo.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/foo.c",
+      "-o",
+      "build/foo.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/foo.o"
+  },
+  {
+    "file": "src/gg.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/gg.c",
+      "-o",
+      "build/gg.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/gg.o"
+  },
+  {
+    "file": "src/main.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "src/main.c",
+      "-o",
+      "build/main.o"
+    ],
+    "directory": "/home/hungtran/coding/myproject",
+    "output": "build/main.o"
+  }
+]
