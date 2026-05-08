@@ -2,7 +2,10 @@
 CC       = gcc
 CFLAGS   = -Iinclude -Wall -Wextra
 TARGET   = ./App
-SOURCES  = $(wildcard src/*.c)
+
+# Find all .c files recursively in src (including subdirectories)
+SOURCES  = $(shell find src -name "*.c")
+# Generate object files preserving directory structure
 OBJECTS  = $(SOURCES:src/%.c=build/%.o)
 
 # Default target
@@ -12,8 +15,9 @@ all: $(TARGET)
 $(TARGET): $(OBJECTS) | build
 	$(CC) -o $@ $^
 
-# Compile C files into object files
+# Compile C files into object files (preserve directory structure)
 build/%.o: src/%.c | build
+	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Create build directory
